@@ -361,7 +361,7 @@ em { font-family: "Playfair Display", serif; font-weight: 500; }
   .nav-links { display: none; position: absolute; left: 0; right: 0; top: 100%; z-index: 4; padding: 18px 16px; margin: 0; background: var(--bg); border-bottom: 1px solid var(--line); }
   .nav-links.open { display: grid; gap: 0; }
   .nav-links a { padding: 11px 0; }
-  .theme-toggle { display: none; }
+  .theme-toggle { display: grid; }
   .hero { min-height: auto; }
   .hero-grid, .about-hero-grid { min-height: auto; grid-template-columns: 1fr; }
   .hero-copy { padding: 68px 0 25px; }
@@ -430,7 +430,6 @@ em { font-family: "Playfair Display", serif; font-weight: 500; }
 }
 
 @media (max-width: 400px) {
-  .theme-toggle, .nav-actions > .count-icon:first-of-type { display: none; }
   .product-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
   .hero-actions .button { width: 100%; }
   .category-grid { gap: 10px; }
